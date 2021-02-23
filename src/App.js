@@ -1,6 +1,7 @@
-
-
+import React from 'react';
+import { LandingPage } from "./LandingPage/LandingPage";
 import Form from "./components/form.js"
+
 function App() {
   return (
     <div className="App">
@@ -8,7 +9,9 @@ function App() {
         Kidtivity
          
       </header>
-    <Form/>
+      <Form />
+      <LandingPage/>
+
     </div>
   );
 }

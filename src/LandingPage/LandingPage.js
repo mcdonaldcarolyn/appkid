@@ -1,10 +1,13 @@
 import React from "react";
+import { TopNav } from './TopNav/TopNav';
 
 
 export function LandingPage() {
   return (
-    <div>Landing Page</div>
+    <div>
+      <TopNav />
+      
+    </div>
   );
 }
 
-export default App;
