@@ -1,10 +1,13 @@
 import React from 'react';
+import styles from './SubNavItem.module.css'
+
 
 export function SubNavItem(props) {
+  const borderClass = props.showRIghtBorder ? styles['right-border'] : '';
   return (
     <div className="dropdown is-hoverable">
         <div className="dropdown-trigger">
-          <button className="button" aria-haspopup="true" aria-controls="dropdown-menu4">
+          <div className={`${styles['sub-nav-item']} ${borderClass}`} aria-haspopup="true" aria-controls="dropdown-menu4">
               <span className='icon is-small'>
                 <i className={`fas ${props.icon}`}></i>
               </span>
@@ -12,7 +15,7 @@ export function SubNavItem(props) {
               <span className="icon is-small">
                 <i className="fas fa-angle-down" aria-hidden="true"></i>
               </span>
-        </button>
+        </div>
   </div>
   <div className="dropdown-menu" id="dropdown-menu4" role="menu">
     <div className="dropdown-content">
