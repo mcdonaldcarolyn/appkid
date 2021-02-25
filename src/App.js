@@ -1,19 +1,17 @@
 import React from 'react';
 import { LandingPage } from "./LandingPage/LandingPage";
 import Form from "./components/form.js"
+import { Route, Switch } from 'react-router-dom';
+import { Search } from "./Search/Search";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        Kidtivity
-         
-      </header>
-      
-      <LandingPage/>
-
-    </div>
-  );
+      <Switch>
+        <Route path='/search' component={Search} />
+        <Route path='/' component={LandingPage} />
+      </Switch>
+    );
 }
 
 export default App;
