@@ -1,5 +1,6 @@
 import React from 'react';
-import styles from './BusinessRating.module.css'
+import styles from './BusinessRating.module.css';
+import Rating from 'react-rating';
 
 export function BusinessRating(){
   return (
@@ -10,7 +11,8 @@ export function BusinessRating(){
         fraction={2}
         readonly
         initialRating={3}
-        />
+      />
+      <p>724 Reviews</p>
     </div>
     );
 }
