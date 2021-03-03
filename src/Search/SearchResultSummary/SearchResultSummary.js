@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from './SearchResultSummary.module.css';
 
-export function SearchResultSummary() {
+export function SearchResultSummary(props) {
   return (
     <div className={styles.container}>
       <div className={styles['search-summary']}>
-        <h1 className='subtitle'><strong>Beach days </strong>near me</h1>
+        <h1 className='subtitle'><strong>{props.term} </strong>{ props.location}</h1>
         <p>Showing number out of number results</p>
       </div>
       <div className={styles.filters}>

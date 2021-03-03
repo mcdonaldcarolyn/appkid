@@ -23,6 +23,7 @@ export function SearchBar(props) {
         <p className="control">
           <input className={`input ${sizeClass} ${styles['input-control']}`}
             onChange={(e) => setTerm(e.target.value)}
+            value={term}
             type="text"
             placeholder="Kid activities..." />
         </p>
@@ -32,6 +33,7 @@ export function SearchBar(props) {
         <div className="control">
           <input className={`input ${sizeClass} ${styles['input-control']}`}
             onChange={(e) => setLocation(e.target.value)}
+            value={location}
             type="text"
             placeholder="me" />
         </div>
