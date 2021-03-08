@@ -7,11 +7,12 @@ export function useBusinessSearch(term, location) {
   const [amountResults, setAmountResults] = useState();
   const [searchParams, setSearchParams] = useState({ term, location });
 
+
   useEffect(() => {
     setBusinesses([]);
     const fetchData = async () => {
       try {
-        const rawData = await api.get('/businesses/search', searchParasms);
+        const rawData = await api.get('/businesses/search', searchParams);
         const resp = await rawData.json();
         setBusinesses(resp.businesses);
         setAmountResults(resp.total);
