@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './SearchResultSummary.module.css';
 
 export function SearchResultSummary(props) {
+  console.log("yellow")
   return (
     <div className={styles.container}>
       <div className={styles['search-summary']}>

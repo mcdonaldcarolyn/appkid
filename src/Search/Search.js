@@ -19,7 +19,7 @@ export function Search() {
       <NavBar term={term} location={locationParam} />
       <SubNav />
       <SearchResultSummary term={term} location={locationParam}/>
-      <SearchResults/>
+      <SearchResults businesses={businesses}/>
     </div>
   );
 }
