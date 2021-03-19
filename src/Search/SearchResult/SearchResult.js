@@ -4,21 +4,25 @@ import styles from './SearchResult.module.css'
 
 export function SearchResult(props) {
   const b = props.businesses;
+  //console.log(b)
+  console.log(b.categories)
   if (!b) {
     return (<div/>);
   }
+  const tags = b.categories.map(category => (<span className={'tag'} key={b.id + category.title}>{category.title}</span>));
+
   return (
     <div className={styles['search-result']}>
-      <img src={b.image_url} alt="business image" className={styles['business-image']}/>
+      <img src={b.photos} alt="business image" className={styles['business-image']}/>
       <div className={styles['business-info']}>
         <h2 className="subtitle">{ b.name}</h2>
         <BusinessRating reviewCount={b.review_count} rating={b.rating}/>
-        <p>$$<span className="tag">All ages</span> <span className="tag">Outdoor Farm activity</span></p>
+        <p>{b.price} {tags} </p>
       </div>
       <div className={styles['contact-info']}>
-        <p>phone number</p>
-        <p>street address</p>
-        <p>town, zip</p>
+        <p>{ b.phone}</p>
+        <p>{ b.location.address1}</p>
+        <p>{ b.location.city}</p>
       </div>
       
     </div>

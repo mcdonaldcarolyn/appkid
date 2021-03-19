@@ -3,11 +3,15 @@ import styles from './SearchResultSummary.module.css';
 
 export function SearchResultSummary(props) {
   console.log("yellow")
+  let resultStats = null;
+  if (props.amountResults && props.shownResults) {
+    resultStats = <p>Showing 1-{props.shownResults} out of { props.amountResults}results</p>
+  }
   return (
     <div className={styles.container}>
       <div className={styles['search-summary']}>
         <h1 className='subtitle'><strong>{props.term} </strong>{ props.location}</h1>
-        <p>Showing number out of number results</p>
+       
       </div>
       <div className={styles.filters}>
       <button className="button">
