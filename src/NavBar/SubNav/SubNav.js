@@ -24,7 +24,7 @@ export function SubNav() {
         <span className="icon">
           <i className="fas fa-hotel"/>
         </span>
-        <span>for buisness</span>
+        <span>For Business</span>
           </button>
       </div>
     </div>
