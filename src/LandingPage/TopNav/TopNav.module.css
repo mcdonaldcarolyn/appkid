@@ -7,7 +7,12 @@
   justify-content: space-between;
   align-items: center;
   margin: var(--element-spacing);
-}
+  }
+  .span{
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #000;
+  }
 
 .left > * {
   margin-right: var(--element-spacing);

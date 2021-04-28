@@ -19,6 +19,7 @@ export function LandingPage() {
     <div className={styles.landing}>
       <div className={styles['search-area']}>
         <TopNav />
+        <hr className={ styles.hr}/>
         <img src={logo} className={styles.logo} alt='logo' />
         <SearchBar search={search}/>
         <SearchSuggestions />
