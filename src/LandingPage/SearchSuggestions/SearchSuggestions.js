@@ -5,7 +5,7 @@ export function SearchSuggestions (){
   return(
     <div className={styles.suggestions}>
       <span className='icon is-small'>
-            <i className="fas fa-trees"></i>
+            <i className="fas fa-tree"></i>
       </span>
       <span className={styles.suggestion}>
         Parks
