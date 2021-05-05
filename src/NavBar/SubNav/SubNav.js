@@ -10,7 +10,7 @@ export function SubNav() {
         <SubNavItem label ='Park' icon = 'fa-tree'/>
         <SubNavItem label='kid friendly dining' icon='fa-utensils'/>
         <SubNavItem label='Playgrounds' icon='fa-landmark'/>
-        <SubNavItem label='more' icon='fa-info-circle' showRightBorder />
+        <SubNavItem label='info' icon='fa-info-circle' showRightBorder />
       </div>
       
       <div>
